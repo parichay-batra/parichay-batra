@@ -1,0 +1,1 @@
+export const GOOGLE_SEARCH_API_ENDPOINT = "https://www.google.com/complete/search?client=firefox&q=";
