@@ -1,9 +1,6 @@
 import DOMPurify from "dompurify";
-interface SearchResultsProps {
-  searchResults: any[];
-}
 
-const SearchResults = ({ searchResults }: SearchResultsProps) => {
+const SearchResults = ({ searchResults }: any) => {
   return (
     <div>
       {searchResults.map((result, index) => {
