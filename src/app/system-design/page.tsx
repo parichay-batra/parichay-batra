@@ -11,6 +11,12 @@ const SystemDesignContainer = () => {
         <li className="underline cursor-pointer">
           <Link href="/system-design/infinite-scroll">Infinite Scroll</Link>
         </li>
+        <li className="underline cursor-pointer">
+          <Link href="/system-design/youtube-live-stream-chat">
+            {" "}
+            YouTube Live Stream Chat UI
+          </Link>
+        </li>
       </ul>
     </div>
   );

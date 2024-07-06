@@ -7,6 +7,7 @@ const nextConfig = {
       "i.imgur.com",
       "unsplash.com",
       "picsum.photos",
+      "i.pravatar.cc",
     ],
   },
 };
