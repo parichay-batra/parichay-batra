@@ -16,12 +16,18 @@ const SystemDesignContainer = () => {
         </li>
         <li className="my-2 cursor-pointer">
           <Link href="/system-design/youtube-live-stream-chat">
-            📺💬 YouTube Live Stream Chat UI
+            📺 YouTube Live Stream Chat UI
           </Link>
         </li>
         <li className="my-2 cursor-pointer">
           <Link href="/system-design/autosuggest-typeahead">
             📝 Autosuggest or Typeahead Suggestions
+          </Link>
+        </li>
+
+        <li className="my-2 cursor-pointer">
+          <Link href="/system-design/reddit-nested-comment">
+            📜 Reddit Nested Comments
           </Link>
         </li>
       </ul>

@@ -142,3 +142,49 @@ export const LIVE_CHAT_DATA = [
 ];
 
 export const LIVE_CHAT_MESSAGE_LIMIT = 20;
+
+
+export const REDDIT_COMMENTS = [{
+    'username': generateRandomName(),
+    'photoURL': generateRandomPhoto(),
+    'comment': generateRandomMessage(),
+    'replies': [{
+        'username': generateRandomName(),
+        'photoURL': generateRandomPhoto(),
+        'comment': generateRandomMessage(),
+        'replies': [{
+            'username': generateRandomName(),
+            'photoURL': generateRandomPhoto(),
+            'comment': generateRandomMessage(),
+            'replies': [{
+                'username': generateRandomName(),
+                'photoURL': generateRandomPhoto(),
+                'comment': generateRandomMessage(),
+                'replies': [{
+                    'username': generateRandomName(),
+                    'photoURL': generateRandomPhoto(),
+                    'comment': generateRandomMessage(),
+                    'replies': []
+                }]
+
+            }]
+        }]
+    }]
+},
+{
+    'username': generateRandomName(),
+    'photoURL': generateRandomPhoto(),
+    'comment': generateRandomMessage(),
+    'replies': [{
+        'username': generateRandomName(),
+        'photoURL': generateRandomPhoto(),
+        'comment': generateRandomMessage(),
+        'replies': null
+    }]
+},
+{
+    'username': generateRandomName(),
+    'photoURL': generateRandomPhoto(),
+    'comment': generateRandomMessage(),
+    'replies': null
+}];
