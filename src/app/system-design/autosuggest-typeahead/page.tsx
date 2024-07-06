@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import SearchResults from "./searchResults.tsx/page";
+import SearchResults from "./searchResults/page";
 import { fetchAutocompleteResults } from "@/utils/services";
 const Autosuggest = () => {
   const [cache, setCache] = useState({});
