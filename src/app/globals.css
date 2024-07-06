@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+em{
+    background-color: yellowgreen;
+    text-decoration: underline;
+}
