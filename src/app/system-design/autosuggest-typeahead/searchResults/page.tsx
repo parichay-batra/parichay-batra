@@ -3,8 +3,9 @@ import DOMPurify from "dompurify";
 const SearchResults = ({ searchResults }: any) => {
   return (
     <div>
-      {searchResults.map((result, index) => {
-        const dangerousString = `
+      {searchResults &&
+        searchResults.map((result, index) => {
+          const dangerousString = `
           <div>
                 <span><strong>${result?._highlightResult?.title?.value}</strong></span>
                 <span class="text-slate-500">
@@ -18,19 +19,19 @@ const SearchResults = ({ searchResults }: any) => {
            
           </div>`;
 
-        return (
-          <div
-            key={index}
-            className=" m-2"
-            dangerouslySetInnerHTML={{
-              __html: DOMPurify.sanitize(dangerousString, {
-                ALLOWED_TAGS: ["em", "strong", "div", "span"],
-                ALLOWED_ATTR: ["class", "className"],
-              }),
-            }}
-          ></div>
-        );
-      })}
+          return (
+            <div
+              key={index}
+              className=" m-2"
+              dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize(dangerousString, {
+                  ALLOWED_TAGS: ["em", "strong", "div", "span"],
+                  ALLOWED_ATTR: ["class", "className"],
+                }),
+              }}
+            ></div>
+          );
+        })}
     </div>
   );
 };
